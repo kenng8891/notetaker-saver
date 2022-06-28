@@ -4,7 +4,7 @@ const htmlRoutes = require('./routes/htmlRoutes');
 const apiRoutes = require('./routes/apiRoutes')
 const PORT = process.env.PORT || 3001;
 
-app.use(express.static('Develop/public'));
+app.use(express.static('develop/public'));
 
 // parse incoming string or array data
 app.use(express.urlencoded({ extended: true }));
